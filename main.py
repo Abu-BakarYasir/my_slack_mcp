@@ -65,4 +65,4 @@ async def get_recent_slack_messages(channel_id: str, limit: int = 5) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    mcp.run(transport="http")
