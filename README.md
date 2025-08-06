@@ -1,6 +1,6 @@
 # Slack-MCP Toolkit 🪤
 
-This project is a **Multi-Tool MCP (Model Context Protocol)** server for Slack automation using the [FastMCP](https://github.com/modelcontextprotocol/fastmcp) library. It allows you to fetch and process Slack messages using AI agents in workflows like Smithery, CrewAI, or MCP Inspector.
+This project is a **Multi-Tool MCP (Model Context Protocol)** server for Slack automation using the [FastMCP](https://github.com/modelcontextprotocol/fastmcp) library. It allows you to fetch and process Slack messages using AI agents.This project is great example to learn and Build Understanding reagarding MCPs.
 
 ---
 
@@ -8,14 +8,13 @@ This project is a **Multi-Tool MCP (Model Context Protocol)** server for Slack a
 
 ```
 slack-mcp/
-├── server.py             # Main MCP tool server with multiple tools
-├── utils/
-│   └── slack.py          # Contains reusable Slack API functions
+├── main.py               # Main MCP tool server with multiple tools
 ├── .env                  # Store your SLACK_TOKEN safely here
 ├── smithery.yaml         # Configuration for Smithery deployment
 ├── README.md             # This file
-├── video_demo.mp4        # Optional recorded demo
-└── requirements.txt      # Python dependencies
+├── uv-lock
+└── pyproject.toml        # Python dependencies
+
 ```
 
 ---
@@ -106,10 +105,13 @@ If you change scopes later:
 1. Run the server:
 
 ```bash
-python server.py
+python main.py
 ```
 
 2. Use [MCP Inspector](https://inspector.modelcontextprotocol.org/) to call tools and test output
+```bash
+mcp dev main.py
+```   
 
 ### On Smithery (Cloud)
 
@@ -128,7 +130,7 @@ You can connect these tools via Smithery to Claude workflows for real-time Slack
 Install dependencies with:
 
 ```bash
-pip install -r requirements.txt
+uv pip install -r pyproject.toml
 ```
 
 Or manually:
@@ -145,9 +147,7 @@ pip install fastmcp httpx python-dotenv
 SLACK_TOKEN=xoxb-123-your-token
 ```
 
-Never commit this file publicly.
 
----
 
 ## 🎉 Contributing
 
@@ -155,9 +155,13 @@ Pull requests are welcome. If you’d like to add new Slack tools (e.g., `send_m
 
 ---
 
-## 📹 Video Demo
+## 📹 Video Demo On claude desktop:
 
-Check out `video_demo.mp4` for a walkthrough of tool usage in MCP Inspector and Smithery.
+
+
+https://github.com/user-attachments/assets/37d905a5-6382-40ce-9500-2dd744656546
+
+
 
 ---
 
@@ -183,6 +187,12 @@ Check out `video_demo.mp4` for a walkthrough of tool usage in MCP Inspector and 
 - Fixed navbar bug
 ```
 
----
+## 📊 Smithery.ai (Cloud Deployment)
+Here is the URL go and checkout this mcp_server:
+[Slack_MCP_Server](https://smithery.ai/server/@Abu-BakarYasir/my_slack_mcp)
 
-Let me know if you want to add badges, GitHub Actions, or convert this into a proper `mkdocs` site!
+---
+## 🧑‍💻 Author
+
+Built by [Abu Bakar Yasir](https://github.com/Abu-BakarYasir) — Computer Engineering @ COMSATS + AI Software Engineer | Full Stack Developer 🚀
+
