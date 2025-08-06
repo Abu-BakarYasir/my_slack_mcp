@@ -1,4 +1,4 @@
-# Slack-MCP Toolkit 🪤
+# Slack-MCP  
 
 This project is a **Multi-Tool MCP (Model Context Protocol)** server for Slack automation using the [FastMCP](https://github.com/modelcontextprotocol/fastmcp) library. It allows you to fetch and process Slack messages using AI agents.This project is great example to learn and Build Understanding reagarding MCPs.
 
@@ -195,4 +195,5 @@ Here is the URL go and checkout this mcp_server:
 ## 🧑‍💻 Author
 
 Built by [Abu Bakar Yasir](https://github.com/Abu-BakarYasir) — Computer Engineering @ COMSATS + AI Software Engineer | Full Stack Developer 🚀
+
 
